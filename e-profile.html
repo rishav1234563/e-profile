@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishav Kumar Yadav | Data Analyst & Cloud Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --light: #E6C7E6;
+            --primary: #663399;
+            --dark: #2E1A47;
+            --accent: #A3779D;
+        }
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(102, 51, 153, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(163, 119, 157, 0.3);
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .glass-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--light);
+            background: rgba(102, 51, 153, 0.15);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .btn-primary:hover {
+            background-color: transparent;
+            border-color: var(--light);
+            box-shadow: 0 0 20px var(--primary);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #E6C7E6, #A3779D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        /* Pulse Animation for Social Icons */
+        .social-icon:hover {
+            color: var(--light);
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 8px var(--accent));
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#2E1A47]/90 backdrop-blur-md border-b border-[#A3779D]/20 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <span class="text-2xl font-black tracking-tighter text-gradient">RY.</span>
+            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-[0.2em] font-bold">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="mailto:yadavrishav438@gmail.com" class="nav-link text-[#A3779D]">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative px-6">
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(var(--primary) 1px, transparent 1px); background-size: 50px 50px;"></div>
+        
+        <div class="container mx-auto text-center z-10" data-aos="zoom-in" data-aos-duration="1200">
+            <h2 class="text-[#A3779D] uppercase tracking-[0.5em] text-sm mb-6 font-bold">Data Analyst & Cloud Solutions</h2>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-tight">
+                RISHAV KUMAR <span class="text-gradient">YADAV</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-[#E6C7E6]/70 leading-relaxed mb-10">
+                Bridging the gap between raw data and business intelligence using 
+                <span class="text-white border-b border-[#663399]">AWS Cloud</span> & 
+                <span class="text-white border-b border-[#663399]">Python Analytics</span>.
+            </p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="mailto:yadavrishav438@gmail.com" class="btn-primary px-10 py-4 rounded-full font-bold text-sm tracking-widest uppercase">Get In Touch</a>
+                
+                <div class="flex items-center space-x-8 text-3xl">
+                    <!-- UPDATED LINKEDIN LINK -->
+                    <a href="https://www.linkedin.com/in/rishav-yadav-386488367" target="_blank" title="LinkedIn Profile" class="social-icon transition-all duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <!-- UPDATED GITHUB LINK -->
+                    <a href="https://github.com/rishav1234563" target="_blank" title="GitHub Profile" class="social-icon transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-[#281741]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-4xl font-bold mb-4">Technical Proficiencies</h3>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#663399] to-[#E6C7E6] mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="glass-card p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-[#A3779D] text-4xl mb-6"><i class="fas fa-terminal"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Languages</h4>
+                    <p class="text-sm text-[#E6C7E6]/60">Python, SQL, Advanced Excel (Pivot/VLOOKUP)</p>
+                </div>
+                <div class="glass-card p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-[#A3779D] text-4xl mb-6"><i class="fas fa-server"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Cloud</h4>
+                    <p class="text-sm text-[#E6C7E6]/60">AWS (EC2, S3, IAM), Cloud Architecture</p>
+                </div>
+                <div class="glass-card p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-[#A3779D] text-4xl mb-6"><i class="fas fa-chart-pie"></i></div>
+                    <h4 class="text-xl font-bold mb-3">BI Tools</h4>
+                    <p class="text-sm text-[#E6C7E6]/60">Power BI, Tableau, Interactive Dashboards</p>
+                </div>
+                <div class="glass-card p-8" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-[#A3779D] text-4xl mb-6"><i class="fas fa-database"></i></div>
+                    <h4 class="text-xl font-bold mb-3">Data Science</h4>
+                    <p class="text-sm text-[#E6C7E6]/60">EDA, Pandas, NumPy, ETL Pipelines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12 flex items-center" data-aos="fade-right">
+                <span class="mr-4 text-[#A3779D]">01.</span> Key Projects
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Project 1 -->
+                <div class="group relative" data-aos="fade-up">
+                    <div class="glass-card p-10 h-full border-l-4 border-l-[#663399]">
+                        <span class="text-xs font-bold text-[#A3779D] tracking-widest uppercase">Automation</span>
+                        <h4 class="text-2xl font-bold mt-2 mb-4 group-hover:text-white transition-colors">KPI Analytics Dashboard</h4>
+                        <p class="text-[#E6C7E6]/70 text-sm leading-relaxed mb-6">
+                            Reduced manual reporting cycles by 40% using Python-based data cleaning and Power BI automation.
+                        </p>
+                        <div class="flex gap-3">
+                            <span class="text-[10px] border border-[#A3779D]/30 px-3 py-1 rounded-full">POWER BI</span>
+                            <span class="text-[10px] border border-[#A3779D]/30 px-3 py-1 rounded-full">PYTHON</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card p-10 h-full border-l-4 border-l-[#663399]">
+                        <span class="text-xs font-bold text-[#A3779D] tracking-widest uppercase">Infrastructure</span>
+                        <h4 class="text-2xl font-bold mt-2 mb-4 group-hover:text-white transition-colors">AWS Scalable Workspace</h4>
+                        <p class="text-[#E6C7E6]/70 text-sm leading-relaxed mb-6">
+                            Architected a secure environment for processing large datasets using IAM governance and EC2/S3.
+                        </p>
+                        <div class="flex gap-3">
+                            <span class="text-[10px] border border-[#A3779D]/30 px-3 py-1 rounded-full">AWS</span>
+                            <span class="text-[10px] border border-[#A3779D]/30 px-3 py-1 rounded-full">SECURITY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 bg-[#281741]/50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h3 class="text-3xl font-bold mb-16 text-center" data-aos="fade-up">Career Journey</h3>
+            
+            <div class="relative border-l-2 border-[#663399]/30 ml-6 space-y-12">
+                <!-- Internship -->
+                <div class="relative pl-12" data-aos="fade-left">
+                    <div class="absolute w-5 h-5 bg-[#663399] border-4 border-[#2E1A47] rounded-full -left-[11px] top-0 shadow-[0_0_10px_#663399]"></div>
+                    <p class="text-[#A3779D] font-bold text-sm mb-1">June 2026 – July 2026</p>
+                    <h4 class="text-xl font-bold">Cloud Computing Intern</h4>
+                    <p class="text-[#E6C7E6] font-medium mb-3 italic">Vital Skills (in association with Tryst, IIT Delhi)</p>
+                    <p class="text-sm text-[#E6C7E6]/60 leading-relaxed">
+                        Managed AWS core services for data storage and scalable hosting. Implemented high-availability solutions and foundational cloud monitoring.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="relative pl-12" data-aos="fade-left" data-aos-delay="200">
+                    <div class="absolute w-5 h-5 bg-[#A3779D] border-4 border-[#2E1A47] rounded-full -left-[11px] top-0"></div>
+                    <p class="text-[#A3779D] font-bold text-sm mb-1">2024 – Present</p>
+                    <h4 class="text-xl font-bold">BCA / Undergraduate Degree</h4>
+                    <p class="text-[#E6C7E6] font-medium">Uttaranchal University, Dehradun</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-[#A3779D]/10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-8 mb-8 text-2xl">
+                <a href="https://www.linkedin.com/in/rishav-yadav-386488367" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rishav1234563" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                <a href="mailto:yadavrishav438@gmail.com" class="hover:text-white transition-colors"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-[#E6C7E6]/40 text-xs tracking-[0.2em] uppercase">
+                Designed & Developed by Rishav Kumar Yadav &copy; 2024
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+    </script>
+</body>
+</html>
